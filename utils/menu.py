@@ -12,8 +12,10 @@ of the system utils functions.         •
 © 2023 - あかり梓川.                   •
 ----------------------------------------
 
-[1] Convert GB's to bytes
-[2] Exit Program"""
+[1] Convert MB's to bytes
+[2] Convert GB's to bytes
+[3] Convert TB's to bytes
+[4] Exit Program"""
     print(menu_)
 
     option = input_user("\n⟩ ")
