@@ -8,3 +8,6 @@
 - [x] convert gb to byte
 - [x] convert tb to byte
 - [ ] detect automatic convert byte to type: [mb, gb, tb]
+
+### Contribution
+To contribute, first fork the project and clone it locally and then send your PR.
