@@ -1,6 +1,6 @@
 ### System-Utils
 
-> ![system-utils demo](https://github.com/whyakari/system-utils/assets/58480908/c51cfa61-5046-4a82-934c-a24618bd5178)
+> ![system-utils demo](https://github.com/whyakari/system-utils/assets/58480908/faae273a-ec84-4975-b038-1ff72067dde1)
 > **Requirement: Python 3.12+**
 
 
