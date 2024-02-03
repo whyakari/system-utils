@@ -25,7 +25,7 @@ System-Utils functions!                •
     option = input_user("\n⟩ ")
 
     if option == "":
-        input("The prompt is Null... Try again.")
+        input(f"{colors.YELLOW}The prompt is Null... Try again.")
         return menu()
 
     return option
