@@ -4,6 +4,7 @@ from .types import user
 from .prompt import input_user
 
 from .convert import (
+    bytes_to_human_readable,
     gb_to_bytes, 
     mb_to_bytes, 
     tb_to_bytes
@@ -50,7 +51,11 @@ def options(op: user) -> user:
             return options(menu())
 
         case "4":
-            input(f"{colors.YELLOW}This place is still unavailable, wait for new releases (:.")
+            print(f"{colors.CYAN}Write bytes and I will detect which type it is.\n")
+            byte_size = int(input("Write your bytes: "))
+            result = bytes_to_human_readable(byte_size)
+            print(result)
+            input()
             return options(menu())
 
         case "5":

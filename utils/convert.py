@@ -1,4 +1,5 @@
 from .types import (
+    byte_size,
     gibibytes, 
     terabytes, 
     megabytes
@@ -23,3 +24,11 @@ def mb_to_bytes(mb: megabytes) -> int:
     bytes = mb * bytes_per_megabyte
     return bytes
 
+def bytes_to_human_readable(byte: byte_size):
+    """Detect the type of the bits."""
+    suffixes = ['B', 'KB', 'MB', 'GB', 'TB']
+    index = 0
+    while byte >= 1024 and index < len(suffixes) - 1:
+        byte /= 1024.0
+        index += 1
+    return f"{byte:.2f} {suffixes[index]}"
